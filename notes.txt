@@ -1,9 +1,56 @@
+Commands with frequently used options:
+
 ls -l -> long format
 ls -r -> reverse order
 ls -t -> sort by time
 ls -lrt -> lists files in long format, sorted by modification time with the oldest files first.
 
-grep -> to search for matching patterns in a file
+grep (Global Regular Expression Print) -> to search for matching patterns in a file
+grep -r -> recursive search
+grep -i -> case insensitive
+grep -n -> show line numbers
+grep -rin -> search recusively, case insensitive, with line numbers
+
+ps (Process Status) -> information about the currently running processes
+ps -a -> all users
+ps -u -> user-oriented format
+ps -x -> processes not attached to a terminal
+ps -aux -> List all running processes
+
+find -> Finds files, directories etc...
+find $@0 (first argument) -> defines the location to do search (Eg: find . -> finds in the current directory)
+find -type f -> files only
+find -name "*.txt" -> search by name
+find . -type f -name "*.txt" -> Find files with .txt extension
+
+tar (Tape Archive) -> compress files in linux
+tar -c -> create
+tar -z -> gzip (GNU Zip - compressing tool, while to decompress gunzip is used)
+tar -v -> verbose
+tar -f -> file
+tar -czvf -> creates a compressed tar archive
+
+chmod -> changes file permission (for more info see chmod.txt)
+chmod -R -> changes permission recusively
+
+chown -> changes the ownership of a file (Eg: chown newOwner filename)
+
+du (Disk Usage)
+du -s -> summarize
+du -h -> human readable
+du -sh *-> summarize disk usage of each file/directory
+
+netstat (Network Statistics) -> networking tool for troubleshooting and configuration
+netstat -t -> TCP
+netstat -u -> UDP
+netstat -l -> listening sockets
+netstat -n -> show numeric addresses/ports
+netstat -tuln -> Display network connections
+
+ssh (Secure Shell) -> provides secure encrypted connection between two hosts over an insecure network
+ssh -p -> port
+ssh -p 2222 -> ssh with specific port
+
 
 
 bashrc location: ~/.bashrc
