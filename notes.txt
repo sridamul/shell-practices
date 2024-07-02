@@ -4,3 +4,6 @@ ls -t -> sort by time
 ls -lrt -> lists files in long format, sorted by modification time with the oldest files first.
 
 grep -> to search for matching patterns in a file
+
+
+bashrc location: ~/.bashrc
