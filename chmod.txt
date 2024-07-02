@@ -1,0 +1,34 @@
+chmod 755 775 777
+First digit - owner permissions
+Second digit - group permissions
+Third digit - others permissions
+
+Octal Notations:
+Read - 4
+Write - 2
+Execute - 1
+ 
+Basic Permission Types:
+
+Read (r): Allows viewing file contents or listing directory contents
+Write (w): Allows modifying file contents or adding/removing files in a directory
+Execute (x): Allows running a file as a program or accessing a directory
+
+Permission Categories:
+
+Owner: The user who owns the file
+Group: Users belonging to the file's group
+Others: All other users
+
+Advanced Topics:
+
+1) Access Control Lists (ACLs): provides more fine-grained control over file permissions beyond the standard user/group/others model
+`getfacl` filename - View ACLs
+`setfacl` -m u:username:rwx filename - Set ACLs
+
+2) Sticky bit: Used primarily on directories to prevent users from deleting files they don't own
+`chmod +t directoryName`
+Octal rep: 1000
+
+3) Changing ownership: `chown` is used to change the file ownership.
+Eg: chown newOwner filename, chown newOwner:newGroup filename
