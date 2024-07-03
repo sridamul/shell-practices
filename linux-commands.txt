@@ -1,0 +1,11 @@
+ls (list) -> used to list files and directories in the current working directory
+pwd (print working directory) -> print the current working directory
+cd (change directory) -> help you navigate through directories
+mkdir (make directory) -> used to create directories
+cp (copy) -> copy-paste (Eg: cp <source> <destination>)
+mv (move) -> cut-paste, also used to rename files and folders (Eg: mv <source> <destination>)
+rm (remove) -> used to delete files and folders (Eg: rm <file name>)
+rm -ri -> recusively (used to delete a dir) -i (prompts confirmation)
+touch -> creates an empty file or updates the timestamp of an existing file
+ln (link) -> create a link to another file (Eg: ln -s <source path> <link name>) (For more see linkname.txt)
+clear -> clears the terminal screen
