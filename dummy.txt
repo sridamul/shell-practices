@@ -1,0 +1,5 @@
+apple red 5
+banana yellow 3
+cherry red 2
+date brown 7
+elderberry purple 4

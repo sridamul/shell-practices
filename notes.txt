@@ -15,6 +15,8 @@ ps (Process Status) -> information about the currently running processes
 ps -a -> all users
 ps -u -> user-oriented format
 ps -x -> processes not attached to a terminal
+ps -p -> list of all processes for a specific PID
+ps -ef -> list all running processes
 ps -aux -> List all running processes
 
 find -> Finds files, directories etc...
@@ -50,7 +52,19 @@ netstat -tuln -> Display network connections
 ssh (Secure Shell) -> provides secure encrypted connection between two hosts over an insecure network
 ssh -p -> port
 ssh -p 2222 -> ssh with specific port
+(
+    Configuring authentication methods (password, public key, etc.)
+    Configuring encryption algorithms
+    Configuring compression
+    Configuring port forwarding
+    Configuring X11 forwarding
+    Configuring SSH keys
+)
 
+export -> sets environmental variables
+Eg: export JAVA_HOME=path/to/java/home
 
+wget <link> -> to retrieve content from web servers via HTTP, HTTPS, and FTP protocols
+wget -c -> resume interupted download
 
 bashrc location: ~/.bashrc

@@ -1,0 +1,28 @@
+Difference between service and systemctl
+- service operates on the files in /etc/init.d (old init system)
+- systemctl operates on the files in /lib/systemd
+- service is adequate for basic service management, while directly calling systemctl give greater control options
+- service manages the services by interacting with the init script while systemctl manages the services by interacting with SystemD
+
+Init software
+- systemd
+- SysV
+- Upstart and more
+
+ubuntu < 14.~ used Upstart, now most popular linux distros uses systemd 
+link: https://distrowatch.com/search.php?ostype=All&category=All&origin=All&basedon=All&notbasedon=None&desktop=All&architecture=All&package=All&rolling=All&isosize=All&netinstall=All&language=All&defaultinit=systemd&status=Active#simpleresults
+
+
+SysVInit is the classic initialization process in Linux.
+The initialization process relies on the individual service to install relevant scripts on the /etc/init.d directory.
+Additionally, the scripts must support the standard commands such as start, stop, and status.
+One of the main characteristics of this init system is that it is a start-once process and does not track the individual services afterward.
+The service command is used for running these init scripts from the terminal.
+
+SystemD, on the other hand, is a recent initialization system that aims to replace SysVInit.
+In fact, most Linux distributions such as Debian and Red Hat are already using SystemD as their init system out of the box.
+In contrast to SysVInit, SystemD continues to run as a daemon process after the initialization is completed.
+Additionally, they are also actively tracking the services through their cgroups.
+The systemctl command is the entry point for users to interact and configures the SystemD.
+
+cgroups (control groups) is a Linux kernel feature that limits, accounts for, and isolates the resource usage (CPU, memory, disk I/O, etc.) of a collection of processes.

@@ -1,0 +1,3 @@
+diff -> shows the edited lines
+cmp -> display the first byte which differs. It shows only the line number not the actual text
+comm -> used to compare two sorted files and display the lines that are unique to each file, as well as the lines that are common to both files

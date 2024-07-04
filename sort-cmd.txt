@@ -1,0 +1,4 @@
+By default, the sort command sorts lines in ASCII collating sequence
+sort -n -> sort numbers in the numerical order
+sort -k -> sort lines based on specific fields (use this on dummy.txt to understand clearly)
+Eg: sort -k 2 dummy.txt

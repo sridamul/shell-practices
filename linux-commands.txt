@@ -9,3 +9,30 @@ rm -ri -> recusively (used to delete a dir) -i (prompts confirmation)
 touch -> creates an empty file or updates the timestamp of an existing file
 ln (link) -> create a link to another file (Eg: ln -s <source path> <link name>) (For more see linkname.txt)
 clear -> clears the terminal screen
+cat (concatenate), echo, less -> Outputs the content of a file or prints anything to the terminal output
+man (manual) -> displays the manual page for a specific command
+uname -> displays information about the system’s kernel, including the kernel name, hostname, kernel release, kernel version, and machine hardware name
+whoami -> returns the current user’s username
+tar -> used to create and extract archived files (-c -> create an archive, -x -> extract an archive)
+zip -> compresses a file into zip archive
+unzip -> extracts files from a zip archive
+grep (global regular expression print) -> text search tool
+head, tail -> displays 10 lines (top and bottom resp) of a file by default (use -n option to mention the number of lines)
+diff, comm, cmp -> used to compare files
+sort -> sort lines in a text file or std input
+export -> used to set the env variables
+ssh (secure shell) -> provides a secure encrypted connection between the local and remote servers
+service -> used to manage system services
+systemctl -> provides more control options (powerful than service cmd, cause allows wider options like mask, is-failed name.service)
+ps (process status) -> used to manage processes
+kill -> forcefully end a process using its PID
+killall -> terminates all processes with a specific name
+df (disk free) -> displays the amount of disk space used and available on the file system
+mount -> mount a file system or device to a specific directory
+chmod (change mode) -> used to change the permissions of a file or directory
+chown (change owner) -> used to change the ownership of a file or directory
+ifconfig (interface config) -> manage network interfaces. Lists all the network interfaces along with the IP address, MAC address etc
+traceroute -> used to trace the route of network packets and determine the path they take to reach a specific destination
+wget (World Wide Web Get) -> to retrieve content from web servers via HTTP, HTTPS, and FTP protocols
+
+Note: | is called as pipe operator.
