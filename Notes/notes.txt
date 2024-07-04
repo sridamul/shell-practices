@@ -88,6 +88,18 @@ Eg 1: passwd username -> change password for `username`
 Eg 2: passwd -f username -> force a user to change their password at the next login
 Eg 3: passwd -e -n days -w warndays username -> password expires after `days` days
 
+cut -> used to select a specific column of a file
+cut -d -> delimiter
+cut -f -> column number
+Eg: cut -d(delimiter) -f(columnNumber) <fileName>
+
+tr (translate) -> translate the file contents
+Eg: cat dummy.txt | tr 'd' 'B' -> replace the d with B in the STDOUT
+
+od (octal dump) -> displays content of a file in different human-readable formats like hexadecimal, octal and ASCII characters
+od -b -> octal format
+od -t x1 -> hexadecimal bytes format
+od -c -> ASCII (backslashed) character format
 
 bashrc location: ~/.bashrc
 

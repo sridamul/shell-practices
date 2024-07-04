@@ -10,7 +10,18 @@ rmdir -> remove directory
 touch -> creates an empty file or updates the timestamp of an existing file
 ln (link) -> create a link to another file (Eg: ln -s <source path> <link name>) (For more see linkname.txt)
 clear -> clears the terminal screen
-cat (concatenate), echo, less -> Outputs the content of a file or prints anything to the terminal output
+cat (concatenate), echo, less, more -> Outputs the content of a file or prints anything to the terminal output
+tac -> reverse of cat res
+cut -> used to select a specific column of a file
+tee (T-plumbing) -> displays and stores the output in new file
+tr (translate) -> translate the file content, converts the chars AYW
+uniq -> to form a sorted list in which every word will occur only once
+wc (word count) -> used to count the lines, words, and characters in a file
+od (octal dump) -> displays content of a file in different human-readable formats like hexadecimal, octal and ASCII characters
+gzip (GNU zip) -> compressing tool (.gz extension)
+gunzip -> decompressing tool
+find -> used to find a particular file within a directory. Searches on file system
+locate -> used to search a file by file name. Searches on database
 man (manual) -> displays the manual page for a specific command
 uname -> displays information about the system’s kernel, including the kernel name, hostname, kernel release, kernel version, and machine hardware name
 whoami -> returns the current user’s username
@@ -20,6 +31,7 @@ unzip -> extracts files from a zip archive
 grep (global regular expression print) -> text search tool
 head, tail -> displays 10 lines (top and bottom resp) of a file by default (use -n option to mention the number of lines)
 diff, comm, cmp -> used to compare files
+sed (stream editor) -> used to edit files using a regular expression (the edited content remains only on display)
 sort -> sort lines in a text file or std input
 export -> used to set the env variables
 ssh (secure shell) -> provides a secure encrypted connection between the local and remote servers
@@ -33,6 +45,9 @@ mount -> mount a file system or device to a specific directory
 chmod (change mode) -> used to change the permissions of a file or directory
 chown (change owner) -> used to change the ownership of a file or directory
 ifconfig (interface config) -> manage network interfaces. Lists all the network interfaces along with the IP address, MAC address etc
+ip -> used to assign an IP address, initialize an interface, disable an interface
+ping (package internet groper) -> used to check the connectivity between two nodes
+host -> used to display the IP address for a given domain name and vice versa, performs the DNS lookups for the DNS Query
 traceroute -> used to trace the route of network packets and determine the path they take to reach a specific destination
 wget (World Wide Web Get) -> to retrieve content from web servers via HTTP, HTTPS, and FTP protocols
 IPtables -> IPTables directly passes firewall rules to Netfilter
@@ -40,8 +55,15 @@ ufw (uncomplicated firewall) ->  UFW configures the rules in IPTables, which the
 apt (advanced package tool) -> package manager in Debian and Debian-based distros
 pacman (package manager) -> Arch and Arch-based distros
 yum (yellowdog updater modified) -> Red Hat and Red Hat-based distros, fedora and centos
+su (super user) -> provides administration access to another user
+id -> to display the user ID (UID) and group ID (GID)
 sudo (super user do) -> to escalate privileges
 cal (calendar) -> displays calendar on terminal
+date -> display date, time, time zone, and more
+sleep -> used to hold the terminal by the specified amount of time (in seconds)
+time -> used to display the time to execute a command
+zcat -> used to display the compressed files
+exit -> used to exit from the current shell
 alias -> additional name for quick usage of commands
 dd (data-description or data-definition) -> read and write to disks
 whereis -> locates the binary, source, and manual pages for a specific command or program
@@ -49,5 +71,6 @@ whatis -> displays a short description of a command or program
 top (table of processes) -> system monitoring tool that displays real-time information about system processes and resource usage
 useradd -> to create a new user in Linux
 usermod -> to modify existing users
+groupadd -> to create a user group
 passwd -> set the password
 Note: | is called as pipe operator.

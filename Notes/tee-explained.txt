@@ -1,0 +1,17 @@
+tee (T-plumbing) -> used to display the message (writes to STDOUT) and store in new file
+
+
+standard way:
+echo "Hello world" > message.txt -> this edits the message.txt with "Hello world"
+echo "Hello world" >> message.txt -> this appends the new message to the existing file
+Note: both the cmds don't display the message `Hello world` in the terminal
+
+tee way:
+echo "Hello world" | tee message.txt -> displays the message and stores it in the file (replaces the existing message)
+echo "Hello world" | tee -a message.txt -> displays the message and appends it to the existing file
+
+Also, tee allows to store the message in multiple files simultaneously
+Eg: echo "Hello" | tee a b c
+
+To avoid writing to STDOUT, use `> /dev/null` in the end
+Eg: echo "Hello" | tee msg > /dev/null

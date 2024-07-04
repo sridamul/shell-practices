@@ -13,6 +13,7 @@ ubuntu < 14.~ used Upstart, now most popular linux distros uses systemd
 link: https://distrowatch.com/search.php?ostype=All&category=All&origin=All&basedon=All&notbasedon=None&desktop=All&architecture=All&package=All&rolling=All&isosize=All&netinstall=All&language=All&defaultinit=systemd&status=Active#simpleresults
 
 
+SysVInit vs SystemD:
 SysVInit is the classic initialization process in Linux.
 The initialization process relies on the individual service to install relevant scripts on the /etc/init.d directory.
 Additionally, the scripts must support the standard commands such as start, stop, and status.
@@ -26,3 +27,9 @@ Additionally, they are also actively tracking the services through their cgroups
 The systemctl command is the entry point for users to interact and configures the SystemD.
 
 cgroups (control groups) is a Linux kernel feature that limits, accounts for, and isolates the resource usage (CPU, memory, disk I/O, etc.) of a collection of processes.
+
+find vs locate:
+locate is background process. 
+It searches the file in the database, whereas the find command searches in the file system. 
+It is faster than the find command. 
+To find the file with the locates command, keep your database updated.
