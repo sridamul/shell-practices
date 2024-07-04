@@ -67,4 +67,28 @@ Eg: export JAVA_HOME=path/to/java/home
 wget <link> -> to retrieve content from web servers via HTTP, HTTPS, and FTP protocols
 wget -c -> resume interupted download
 
+dd (data-definition or data-description) -> converts and copy files
+Eg: dd if=/dev/sda of=/dev/sdb -> copies from sda to sdb
+if -> input file, of -> output file
+
+top (table of processes) -> system monitoring tool that displays real-time information about system process and resource usage
+top -o MEM -> sort the process list by memory usage
+top -p PID -> detailed information about a specific process
+top -n 1 -> summary of system resource usage
+
+
+useradd -> to create a new user in Linux
+Eg: useradd JournalDev -d /home/JD -> creates user in jd directory
+
+usermod -> to modify existing users
+Eg: usermod JournalDev -a -G sudo, audio, mysql -> adds the new user to the mentioned groups
+
+passwd -> sets password
+Eg 1: passwd username -> change password for `username`
+Eg 2: passwd -f username -> force a user to change their password at the next login
+Eg 3: passwd -e -n days -w warndays username -> password expires after `days` days
+
+
 bashrc location: ~/.bashrc
+
+snapfuse -> FUSE -> Filesystem in UserSpace

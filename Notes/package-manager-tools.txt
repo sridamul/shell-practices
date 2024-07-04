@@ -1,0 +1,3 @@
+apt (advanced package tool) -> package manager in Debian and Debian-based distros
+pacman (package manager) -> Arch and Arch-based distros
+yum (yellowdog updater modified) -> Red Hat and Red Hat-based distros, fedora and centos

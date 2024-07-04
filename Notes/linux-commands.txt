@@ -34,5 +34,19 @@ chown (change owner) -> used to change the ownership of a file or directory
 ifconfig (interface config) -> manage network interfaces. Lists all the network interfaces along with the IP address, MAC address etc
 traceroute -> used to trace the route of network packets and determine the path they take to reach a specific destination
 wget (World Wide Web Get) -> to retrieve content from web servers via HTTP, HTTPS, and FTP protocols
-
+IPtables -> IPTables directly passes firewall rules to Netfilter
+ufw (uncomplicated firewall) ->  UFW configures the rules in IPTables, which then sends those rules to Netfilter
+apt (advanced package tool) -> package manager in Debian and Debian-based distros
+pacman (package manager) -> Arch and Arch-based distros
+yum (yellowdog updater modified) -> Red Hat and Red Hat-based distros, fedora and centos
+sudo (super user do) -> to escalate privileges
+cal (calendar) -> displays calendar on terminal
+alias -> additional name for quick usage of commands
+dd (data-description or data-definition) -> read and write to disks
+whereis -> locates the binary, source, and manual pages for a specific command or program
+whatis -> displays a short description of a command or program
+top (table of processes) -> system monitoring tool that displays real-time information about system processes and resource usage
+useradd -> to create a new user in Linux
+usermod -> to modify existing users
+passwd -> set the password
 Note: | is called as pipe operator.
